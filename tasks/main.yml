@@ -1,10 +1,18 @@
+# @Author: Haupt Joshua
+# @Date:   26-Mar-2018
+# @Email:  josh@hauptj.com
+# @Filename: main.yml
+# @Last modified by:   Haupt Joshua
+# @Last modified time: 11-Apr-2018
+
 ---
 # Auto update
 # Source: https://github.com/geerlingguy/ansible-role-security/blob/master/tasks/autoupdate-RedHat.yml
+
 - name: Install yum-cron.
   yum:
     name: yum-cron
-    state: present
+    state: latest
 
 - name: Ensure yum-cron is running and enabled on boot.
   service:

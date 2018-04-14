@@ -1,0 +1,2 @@
+# CI testing, this should only be set to true for testing
+updates_ci_test: true

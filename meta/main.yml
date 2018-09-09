@@ -12,8 +12,3 @@ galaxy_info:
   galaxy_tags:
     - updates
     - security
-dependencies:
-  - role: geerlingguy.repo-epel
-    when: updates_ci_test == true
-  - role: geerlingguy.repo-remi
-    when: updates_ci_test == true
